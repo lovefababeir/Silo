@@ -1,0 +1,116 @@
+@import "../../styles/_fonts.scss";
+@import "../../styles/_mixins.scss";
+@import "../../styles/partials.scss";
+
+.page {
+	&__header {
+		@include warehouse-border;
+		@include flex();
+		padding: 3.2rem 2.4rem;
+		@include tablet {
+			@include flex(row, space-between);
+			padding: 2.1rem 2.4rem;
+		}
+	}
+	&__title {
+		@include H1;
+	}
+	&__cta-box {
+		@include flex;
+		width: 100%;
+		@include tablet {
+			@include flex(row, space-between);
+			width: auto;
+		}
+	}
+	&__search {
+		font-family: $regular;
+		width: 100%;
+		height: 3.6rem;
+		padding: 0.8rem 1.6rem;
+		border-radius: 2rem;
+		border: 0.1rem solid $stock-silver;
+		margin: 1.6rem 0;
+		@include tablet {
+			width: 27.4rem;
+			margin: 0 1.6rem;
+		}
+	}
+	&__add-link {
+		width: 100%;
+		@include tablet {
+			width: auto;
+		}
+	}
+	&__add-content {
+		@extend .page__search;
+		font-family: $bold;
+		color: $stock-white;
+		background-color: $stock-indigo;
+		border: none;
+		@include tablet {
+			width: max-content;
+		}
+	}
+}
+.table {
+	display: none;
+	@include tablet {
+		@include flex(row, space-between, center, nowrap);
+		height: 4rem;
+		background-color: $bg-offgrey;
+		@include warehouse-border;
+		padding: 0 2.5rem 0 2.4rem;
+	}
+	&__titles {
+		order: 0;
+		@include H4;
+		text-transform: uppercase;
+		color: $stock-grey;
+		width: 17%;
+		margin-bottom: 0;
+
+		&--3 {
+			@include tablet {
+				order: 1;
+			}
+		}
+		&--4 {
+			@include tablet {
+				order: 1;
+				max-width: 20rem;
+			}
+		}
+		&--5 {
+			margin-left: auto;
+			@include tablet {
+				order: 1;
+			}
+		}
+		&--actions {
+			order: 1;
+			@include tablet {
+				width: 9%;
+			}
+			text-align: right;
+			padding-right: 1.6rem;
+			margin-left: 1.6rem;
+		}
+	}
+	.sortIcon {
+		height: 1.5rem;
+		position: relative;
+		top: 0.3rem;
+	}
+}
+
+.link {
+	text-decoration: none;
+}
+
+.qtyColumn {
+	@include tablet {
+		width: 10%;
+		padding: 0;
+	}
+}

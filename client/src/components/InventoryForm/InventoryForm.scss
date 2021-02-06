@@ -1,0 +1,134 @@
+@import "../../styles/_fonts.scss";
+@import "../../styles/_mixins.scss";
+@import "../../styles/partials.scss";
+
+.i-update {
+	&__header {
+		@include flex(row);
+		@include warehouse-border;
+		padding: 2.4rem 3.2rem 2.4rem 2.4rem;
+	}
+	&__backBtn {
+		margin-top: 0.5rem;
+	}
+	&__title {
+		@include H1;
+		width: calc(100% - 2.4rem - 1.2rem);
+		margin-left: 1.2rem;
+	}
+}
+
+.inv-form {
+	@include flex(column);
+	@media (min-width: $tablet-breakpoint) {
+		@include flex(row);
+	}
+	&__section {
+		@include warehouse-border;
+		width: 100%;
+		padding: 1.6rem 2.4rem 2.4rem 2.4rem;
+		@include tablet {
+			width: 50%;
+			border-bottom: none;
+			&:first-child {
+				border-right: 0.1rem solid $stock-silver;
+			}
+		}
+	}
+	&__title {
+		@include H2;
+		margin: 1.6rem 0 2.4rem 0;
+	}
+	&__label {
+		@include H3;
+		margin: 1.6rem 0 0.4rem 0;
+	}
+	&__textbox {
+		@include P2;
+		background-color: $stock-white;
+		height: 3.6rem;
+		width: 100%;
+		padding: 0.3rem 0 0.8rem 1.6rem;
+		border: 0.1rem solid $stock-silver;
+		border-radius: 2em;
+		margin-bottom: 0;
+		&:active,
+		&:focus-within {
+			border: 0.2rem solid $stock-indigo;
+		}
+	}
+	&__textarea {
+		@extend .inv-form__textbox;
+		height: 12rem;
+		padding-bottom: 9rem;
+	}
+	&__dropDown {
+		@extend .inv-form__textbox;
+	}
+	&__cta-box {
+		@include flex(row, center, center, nowrap);
+		background-color: $bg-offgrey;
+		width: 100%;
+		border-top: $stock-silver solid 0.1rem;
+		@include tablet {
+			@include flex(row, flex-end);
+			padding: 0 2.4rem;
+		}
+	}
+	&__updateBtn {
+		@include H3;
+		color: $stock-white;
+		font-family: $bold;
+		background-color: $stock-indigo;
+		width: 13.9rem;
+		height: 3.6rem;
+		border-radius: 2rem;
+		border: none;
+		padding: 0.8rem 1.6rem;
+		margin: 1.6rem 0;
+		@include tablet {
+			width: max-content;
+		}
+	}
+	&__cancelBtn {
+		@extend .inv-form__updateBtn;
+		color: initial;
+		background-color: $stock-white;
+		border: $stock-silver solid 0.1rem;
+		margin-right: 1.7rem;
+	}
+}
+
+.status {
+	@include flex(row);
+
+	&__label {
+		@include P2;
+		width: calc(50% - 2.4rem);
+		margin-bottom: 0;
+	}
+	&__radioBtn {
+		width: 1.6rem;
+		height: 1.6rem;
+		padding: 0.45rem;
+		margin: 0 0.8rem 0 0;
+	}
+}
+
+.errorIcon {
+	display: inline-block;
+	width: 1.3rem;
+	height: 1.3rem;
+	margin-top: 0.3rem;
+}
+
+.errorMessage {
+	@include P3;
+	color: $stock-red;
+	display: inline-block;
+	margin-top: 0.4rem;
+}
+
+.errBorder {
+	border: 0.2rem solid $stock-red;
+}

@@ -1,0 +1,141 @@
+@import "../../styles/fonts";
+@import "../../styles/mixins";
+@import "../../styles/partials.scss";
+.invedit-update {
+	&__header {
+		@include flex(row);
+		padding: 2.4rem 3.2rem 2.4rem 2.4rem;
+		@include warehouse-border;
+	}
+	&__backBtn {
+		margin-top: 0.5rem;
+	}
+	&__title {
+		@include H1;
+		width: calc(100% - 2.4rem - 1.2rem);
+		margin-left: 1.2rem;
+	}
+}
+.invedit-form {
+	@include flex(column);
+	@media (min-width: $tablet-breakpoint) {
+		@include flex(row);
+	}
+	&__section {
+		width: 100%;
+		padding: 1.6rem 2.4rem 2.4rem 2.4rem;
+		@include warehouse-border;
+		@include tablet {
+			width: 50%;
+			height: 44.3rem;
+			border-bottom: none;
+			&:first-child {
+				border-right: 1px solid $stock-silver;
+			}
+		}
+	}
+	&__title {
+		@include H2;
+		margin: 1.6rem 0 2.4rem 0;
+	}
+	&__label {
+		@include H3;
+		margin-bottom: 0.4rem;
+		margin-top: 1.6rem;
+	}
+	&__textbox {
+		height: 3.6rem;
+		width: 100%;
+		margin-bottom: 0;
+		border-radius: 2rem;
+		border: 1px solid $stock-silver;
+	}
+	&__textarea {
+		height: 12rem;
+		width: 100%;
+		margin-bottom: 0;
+		border-radius: 2rem;
+		border: 1px solid $stock-silver;
+	}
+	&__dropDown {
+		width: 100%;
+		height: 3.6rem;
+		border: 1px solid #bdc5d5;
+		box-sizing: border-box;
+		border-radius: 20px;
+		background-color: #ffffff;
+		padding: 0.8rem 0 0.8rem 1.6rem;
+		// margin-bottom: 1.6rem;
+		padding-right: 0.5rem;
+	}
+	&__cta-box {
+		width: 100%;
+		@include flex(row, center, center, nowrap);
+		background-color: rgba(247, 248, 249, 0.7);
+	}
+	&__updateBtn {
+		width: 13.9rem;
+		height: 3.6rem;
+		border-radius: 2rem;
+		padding: 8px 16px;
+		margin: 1.6rem 0;
+		font-family: $bold;
+		background-color: $stock-indigo;
+		color: $stock-white;
+		border: none;
+		@include H3;
+		@include tablet {
+			width: max-content;
+		}
+	}
+	&__cancelBtn {
+		@extend .invedit-form__updateBtn;
+		background-color: $stock-white;
+		color: initial;
+		border: $stock-silver solid 1px;
+		margin-right: 1.7rem;
+	}
+}
+.invedit__dropDown {
+	width: 100%;
+	height: 3.6rem;
+	border: 1px solid #bdc5d5;
+	box-sizing: border-box;
+	border-radius: 20px;
+	background-color: #ffffff;
+	padding: 0.8rem 0 0.8rem 1.6rem;
+	// margin-bottom: 1.6rem;
+	padding-right: 0.5rem;
+}
+.invedit_status {
+	@include flex(row);
+	&__label {
+		@include P2;
+		width: calc(50% - 2.4rem);
+	}
+	&__radioBtn {
+		width: 1.6rem;
+		height: 1.6rem;
+		margin-right: 0.8rem;
+		padding: 0.45rem;
+		margin-bottom: 0;
+	}
+}
+.invedit_errorIcon {
+	display: inline-block;
+	width: 1.3rem;
+	height: 1.3rem;
+	margin-top: 0.3rem;
+}
+.invedit_errorMessage {
+	@include P3;
+	color: $stock-red;
+	display: inline-block;
+	margin-top: 0.4rem;
+}
+.inputSection {
+	@include tablet {
+		display: flex;
+		height: 470px;
+	}
+}

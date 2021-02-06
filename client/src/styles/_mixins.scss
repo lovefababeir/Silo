@@ -1,0 +1,72 @@
+@import "./fonts";
+@import "./partials.scss";
+
+@mixin mobile {
+	@media screen and (max-width: $mobile-breakpoint) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media screen and (min-width: $tablet-breakpoint) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media screen and (min-width: $desktop-breakpoint) {
+		@content;
+	}
+}
+
+//FLEXBOX:
+@mixin flex(
+	$direction: column,
+	$justify: flex-start,
+	$align: flex-start,
+	$wrap: wrap
+) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+	flex-wrap: $wrap;
+}
+
+@mixin flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+//changed to 1px. 2px is too thick
+@mixin warehouse-border {
+	border-bottom: 1px solid $stock-silver;
+}
+
+@mixin button-style {
+	font-family: $bold;
+	border: none;
+	border-radius: $level-four;
+	padding: $level-one;
+}
+
+@mixin nav-link {
+	width: 164px;
+	font-size: $level-three;
+	color: $stock-silver;
+	text-decoration: none;
+	display: flex;
+	justify-content: $middle;
+}
+
+@mixin arrow-style{
+	width:30px;
+    height:30px;
+}
+
+@mixin details-title{
+	font-family:$bold;
+    color:$stock-black;
+    font-size:$level-five;
+    padding:$level-one;
+}

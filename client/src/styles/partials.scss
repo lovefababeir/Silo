@@ -1,0 +1,40 @@
+@import "./fonts";
+
+//breakpoints
+$mobile-breakpoint: 375px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1280px;
+
+//colors
+$stock-black: #13182c;
+$stock-bg: #232940;
+$stock-indigo: #2e66e5;
+$stock-white: #ffffff;
+$stock-grey: #5c667e;
+$stock-silver: #bdc5d5;
+$stock-green: #158463;
+$stock-red: #c94515;
+$bg-offgrey: rgba(247, 248, 249, 0.7);
+$instockStatus: rgba(21, 132, 99, 0.07);
+$outstockStatus: rgba(201, 69, 21, 0.07);
+
+//fonts
+$bold: "titillium-bold";
+$regular: "titillium-regular";
+
+$level-one: 0.5rem;
+$level-two: 1rem;
+$level-three: 1.5rem;
+$level-four: 2rem;
+$level-five: 2.5rem;
+$none: 0;
+
+//flexbox
+$middle: center;
+$start: flex-start;
+$between: space-between;
+$apart: space-around;
+$even: space-evenly;
+
+//%
+$full: 100%;

@@ -1,0 +1,111 @@
+@import "../../styles/fonts";
+@import "../../styles/mixins";
+@import "../../styles/partials.scss";
+.warehouseAdd {
+	min-width: 343px;
+	min-height: 922px;
+	&__inner {
+		@include tablet {
+			display: flex;
+			justify-content: space-evenly;
+		}
+	}
+	&__header {
+		width: 34rem;
+		height: 8rem;
+		display: flex;
+		align-items: $middle;
+		padding: 1.5rem;
+		border-bottom: 1px solid $stock-silver;
+		@include tablet {
+			width: 70.2rem;
+		}
+		@include desktop {
+			width: 102.2rem;
+		}
+	}
+	&__title {
+		font-size: 2.5rem;
+		padding-left: $level-one;
+	}
+	&__subtitle {
+		font-family: $bold;
+		font-size: $level-four;
+		padding: 1.5rem 0;
+		@include tablet {
+			font-size: $level-five;
+		}
+	}
+}
+.warehouseAdd__label {
+	font-family: $bold;
+	font-size: $level-three;
+}
+textarea {
+	width: 79vw;
+	height: 10vw;
+	border: 1px solid $stock-silver;
+	box-sizing: border-box;
+	border-radius: 2rem;
+	background-color: $stock-white;
+	margin-bottom: 1.6rem;
+	resize: none;
+	&::placeholder {
+		font-family: $regular;
+		font-size: $level-three;
+		color: $stock-silver;
+	}
+}
+.warehouseAdd__back {
+	width: 30px;
+	height: 30px;
+}
+//container of warehouse inputs
+.warehouse-box {
+	padding: 0 1.5rem;
+	border-bottom: 1px solid $stock-silver;
+	@include tablet {
+		border: none;
+	}
+}
+//container of contact info section
+.warehouse__box2 {
+	padding: 0 1.5rem;
+	&__title {
+		margin: 1.6rem 0 2.4rem 0;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 28px;
+	}
+}
+.cancel {
+	text-decoration: none;
+}
+.warehouseAdd__buttonBox {
+	width: $full;
+	height: 7.25rem;
+	background-color: $bg-offgrey;
+	display: flex;
+	align-items: $middle;
+	justify-content: space-evenly;
+	margin: 0 auto;
+	&--cancel {
+		font-size: 1.2rem;
+		padding: 0.85rem;
+		width: 13rem;
+		background-color: $stock-white;
+		border: 1px solid $stock-silver;
+		box-sizing: border-box;
+		border-radius: 2rem;
+	}
+	&--save {
+		font-size: 1.2rem;
+		padding: 0.85rem;
+		width: 13rem;
+		align-self: $middle;
+		color: $stock-white;
+		background-color: $stock-indigo;
+		border: none;
+		border-radius: 2rem;
+	}
+}

@@ -1,0 +1,66 @@
+@font-face {
+	font-family: "titillium-bold";
+	src: url("../assets/fonts/titillium-semi.ttf") format("truetype");
+	font-weight: normal;
+}
+@font-face {
+	font-family: "titillium-regular";
+	src: url("../assets/fonts/titillium-regular.ttf") format("truetype");
+	font-weight: normal;
+}
+
+// only need to pass on font parameter if you want $bold
+@mixin font($size, $line-height, $weight: $regular) {
+	font-size: $size;
+	line-height: $line-height;
+	font-family: $weight;
+}
+
+//only insert $bold parameter if you want bold font.
+@mixin H1($weight: $regular) {
+	@include font(2.8rem, 3.6rem, $weight);
+	@include tablet {
+		@include font(3.2rem, 4rem, $weight);
+	}
+}
+
+@mixin H2($weight: $regular) {
+	@include font(2rem, 2.8rem, $weight);
+	@include tablet {
+		@include font(2.4rem, 3.2rem, $weight);
+	}
+}
+
+@mixin H3($weight: $regular) {
+	@include font(1.3rem, 2rem, $weight);
+	@include tablet {
+		@include font(1.4rem, 2.2rem, $weight);
+	}
+}
+@mixin H4($weight: $regular) {
+	@include font(1.1rem, 1.6rem, $weight);
+	@include tablet {
+		@include font(1.2rem, 1.8rem, $weight);
+	}
+}
+
+@mixin P1($weight: $regular) {
+	@include font(1.5rem, 2.6rem, $weight);
+	@include tablet {
+		@include font(1.6rem, 2.8rem, $weight);
+	}
+}
+
+@mixin P2($weight: $regular) {
+	@include font(1.3rem, 2rem, $weight);
+	@include tablet {
+		@include font(1.4rem, 2.2rem, $weight);
+	}
+}
+
+@mixin P3($weight: $regular) {
+	@include font(1.1rem, 1.6rem, $weight);
+	@include tablet {
+		@include font(1.2rem, 1.8rem, $weight);
+	}
+}

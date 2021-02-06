@@ -1,0 +1,102 @@
+[
+  {
+    "itemName": "Television",
+    "description": "This 50\", 4K LED TV provides a crystal-clear picture and vivid colors.",
+    "category": "Electronics"
+  },
+  {
+    "itemName": "Gym Bag",
+    "description": "Made out of military-grade synthetic materials, this gym bag is highly durable, water resistant, and easy to clean.",
+    "category": "Gear"
+  },
+  {
+    "itemName": "Hoodie",
+    "description": "A simple 100% cotton hoodie, this is an essential piece for any wardrobe.",
+    "category": "Apparel"
+  },
+  {
+    "itemName": "Keychain",
+    "description": "Made from 100% genuine leather, this keychain will keep your keys organized while keeping a classic, professional look.",
+    "category": "Accessories"
+  },
+  {
+    "itemName": "Shampoo",
+    "description": "Natural shampoo made from 99% biodegradable ingredients.",
+    "category": "Health"
+  },
+  {
+    "itemName": "Phone Charger",
+    "description": "This USB-C phone charger features fast charging for the latest devices.",
+    "category": "Electronics"
+  },
+  {
+    "itemName": "Tent",
+    "description": "Perfect for spring or summer camping, this 1-person tent is easy to pack and has the option to become modular when used with other products.",
+    "category": "Gear"
+  },
+  {
+    "itemName": "Winter Jacket",
+    "description": "Made with a durable 100% waterproof shell, and breathable layers without a ton of vents and perforations. ",
+    "category": "Apparel"
+  },
+  {
+    "itemName": "Watch",
+    "description": "Crafted from premium materials including a full-grain leather strap and a stainless steel case, this watch features swiss movement and is waterproof up to 5 ATM.",
+    "category": "Accessories"
+  },
+  {
+    "itemName": "Soap",
+    "description": "Organic and hypoallergenic, this soap is safe to use for all skin types.",
+    "category": "Health"
+  },
+  {
+    "itemName": "Monitor",
+    "description": "A 32\" IPS LED ultrawide monitor, perfect for work or gaming.",
+    "category": "Electronics"
+  },
+  {
+    "itemName": "Backpack",
+    "description": "This sleek, 40L backpack is completely waterproof making it perfect for adventures or the daily commute.",
+    "category": "Gear"
+  },
+  {
+    "itemName": "T-Shirt",
+    "description": "Breathable, and made of 100% organic cotton, this is an essential piece for any wardrobe",
+    "category": "Apparel"
+  },
+  {
+    "itemName": "Belt",
+    "description": "Made from 100% full grain leather this belt will go with any dress or casual outfit.",
+    "category": "Accessories"
+  },
+  {
+    "itemName": "Toothpaste",
+    "description": "This toothpaste is specially formulated to protect enamel and whiten teeth with natural ingredients.",
+    "category": "Health"
+  },
+  {
+    "itemName": "Mouse",
+    "description": "With a 1-month battery life this mouse is perfect for travel and productivity.",
+    "category": "Electronics"
+  },
+  {
+    "itemName": "Sleeping Bag",
+    "description": "This ultra-light sleeping bag is packed with an eco-friendly fill. Best used in spring or summer temperatures.",
+    "category": "Gear"
+  },
+  {
+    "itemName": "Windbreaker",
+    "description": "Made from waterproof material, this windbreaker is best layered on top of a sweater to keep warm in inclement conditions.",
+    "category": "Apparel"
+  },
+  {
+    "itemName": "Water Bottle",
+    "description": "With a 1-litre capacity and BPA-free, this water-bottle is perfect for long days out.",
+    "category": "Accessories"
+  },
+  {
+    "itemName": "Protein Powder",
+    "description": "100% natural plant-based protein powder from organic ingredients.",
+    "category": "Health"
+  }
+]

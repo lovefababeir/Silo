@@ -1,0 +1,97 @@
+@import "../../styles/fonts";
+@import "../../styles/mixins";
+@import "../../styles/partials.scss";
+.details {
+	display: flex;
+	justify-content: $between;
+	padding: $level-three;
+	align-items: $middle;
+	@include warehouse-border;
+	&__header {
+		display: flex;
+		align-items: $middle;
+	}
+	&__arrow {
+		@include arrow-style;
+	}
+	&__button {
+		width: 3.25rem;
+		height: 3.25rem;
+		color: $stock-white;
+		font-size: $none;
+		background-color: $stock-indigo;
+		@include button-style;
+		justify-content: $even;
+		@include tablet {
+			width: 8rem;
+			font-size: 1.4rem;
+			display: flex;
+			align-items: $middle;
+		}
+	}
+	&__title {
+		@include details-title;
+	}
+}
+.warehouse-editsvg {
+	display: revert;
+	@include tablet {
+		display: flex;
+	}
+}
+.contact {
+	height: 20.25rem;
+	display: flex;
+	flex-wrap: wrap;
+	padding: $level-two;
+	@include warehouse-border;
+	@include tablet {
+		height: 12.75rem;
+		align-items: $middle;
+		justify-content: $apart;
+	}
+	@include desktop {
+		border: none;
+	}
+	&__cell {
+		width: 15rem;
+		padding: $level-one;
+		&--1 {
+			padding: $level-one;
+			@include tablet {
+				width: 20rem;
+				height: 6.25rem;
+				@include flex-column;
+				justify-content: $middle;
+				border-right: 1px solid $stock-silver;
+			}
+			@include desktop {
+				width: 25rem;
+			}
+		}
+	}
+}
+.contact__cell-title {
+	color: $stock-grey;
+	font-size: 1.2rem;
+}
+.contact__cell-info {
+	width: 13rem;
+	font-family: $regular;
+	font-size: 1.2rem;
+	font-weight: lighter;
+}
+.warehouse-details__nav {
+	display: flex;
+	justify-content: $even;
+	align-items: $middle;
+}
+.details__nav-col {
+	align-items: $middle;
+}
+.details__nav-col--title {
+	padding: $level-one;
+}
+.editLink {
+	text-decoration: none;
+}

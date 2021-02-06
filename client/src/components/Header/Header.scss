@@ -1,0 +1,64 @@
+@import "../../styles/fonts";
+@import "../../styles/mixins";
+@import "../../styles/partials.scss";
+.navBar {
+	width: $full;
+	height: 200px;
+	background-color: $stock-bg;
+	@include flex-column;
+	align-items: $middle;
+	padding: $level-two;
+	@include tablet {
+		width: $full;
+		flex-direction: row;
+		justify-content: $between;
+		align-items: $start;
+		padding: $level-two;
+		box-sizing: border-box;
+	}
+	@include desktop {
+		width: $full;
+		padding: 2rem 6rem;
+	}
+	&__logo {
+		border-radius: 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1rem;
+		&-icon {
+			height: 5rem;
+			background-color: #fff;
+			border-radius: 0.7rem;
+			padding: 0.7rem 0.5rem;
+		}
+		&-title {
+			font-size: 3rem;
+			color: #fff;
+			margin: 0 1rem;
+		}
+	}
+	&__buttons {
+		display: flex;
+		@include tablet {
+			padding: $level-two;
+		}
+		&--warehouse {
+			@include nav-link;
+			@include button-style;
+			@include tablet {
+				width: 95px;
+			}
+		}
+		&--inventory {
+			@include nav-link;
+			@include button-style;
+			@include tablet {
+				width: 95px;
+			}
+		}
+	}
+}
+.selected {
+	background-color: $stock-black;
+}

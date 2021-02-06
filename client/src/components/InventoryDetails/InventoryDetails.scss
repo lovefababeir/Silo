@@ -1,0 +1,165 @@
+@import "../../styles/_fonts.scss";
+@import "../../styles/_mixins.scss";
+@import "../../styles/partials.scss";
+.inventory__details {
+	width: $full;
+	@include flex-column;
+	justify-content: $between;
+	padding: $level-three;
+	align-items: $middle;
+	&__header {
+		width: $full;
+		display: flex;
+		justify-content: $between;
+		@include warehouse-border;
+		@include tablet {
+			width: 704px;
+			padding: $level-two;
+		}
+		@include desktop {
+			width: 100%;
+		}
+	}
+	&__arrow {
+		width: 30px;
+		height: 30px;
+	}
+	&__button {
+		width: 3.5rem;
+		height: 36px;
+		background-color: $stock-indigo;
+		font-size: 0;
+		@include button-style;
+		justify-content: space-evenly;
+		@include tablet {
+			font-size: 1.4rem;
+			color: $stock-white;
+			width: 8rem;
+			display: flex;
+			align-items: $middle;
+		}
+	}
+	&__title {
+		padding: $level-one;
+		display: flex;
+		align-items: $middle;
+	}
+	&__name {
+		font-family: $bold;
+		color: $stock-black;
+		font-size: $level-five;
+	}
+}
+.inventory-editsvg {
+	display: revert;
+	@include tablet {
+		display: flex;
+	}
+}
+.inventory__contact {
+	height: 346px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: $level-two;
+	border: none;
+	@include tablet {
+		height: 200px;
+		width: 704px;
+		flex-direction: row;
+	}
+	@include desktop {
+		width: 1020px;
+	}
+	&__cell {
+		width: 15rem;
+		padding: $level-three;
+		@include tablet {
+			width: 15rem;
+			height: 80px;
+			padding: $level-two;
+			border: none;
+		}
+		&--1 {
+			padding: $level-three;
+			border: none;
+		}
+		&--2 {
+			padding: $level-three;
+		}
+	}
+}
+.inventory__contact__cell-title {
+	color: $stock-grey;
+	font-size: 1.2rem;
+}
+.inventory__contact__cell-info {
+	width: 13rem;
+	font-family: $regular;
+	font-size: 1.2rem;
+	font-weight: lighter;
+	&--1 {
+		width: 26rem;
+		font-family: $regular;
+		font-size: 1.2rem;
+		font-weight: lighter;
+		@include tablet {
+			width: 22rem;
+		}
+		@include desktop {
+			width: 35rem;
+		}
+	}
+}
+.inventory__warehouse-details__nav {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.inventory__details__nav-col {
+	align-items: center;
+}
+.inventory__details__nav-col--title {
+	padding: $level-one;
+}
+.inventory__box1 {
+	height: 9rem;
+	@include tablet {
+		height: 198px;
+		width: 340px;
+		margin: 0;
+		border-right: 1px solid $stock-silver;
+	}
+	@include desktop {
+		width: 475px;
+	}
+}
+.inventory__box2 {
+	width: 32rem;
+	height: 10rem;
+	display: flex;
+	flex-wrap: wrap;
+	@include tablet {
+		height: 198px;
+		width: 340px;
+		margin: 0;
+		padding: $level-three;
+	}
+}
+.inStockStyle {
+	color: $stock-green;
+	text-transform: uppercase;
+	border: solid 1px rgba(21, 132, 99, 0.07);
+	background-color: rgba(21, 132, 99, 0.07);
+	width: max-content;
+	padding: 0.5rem 1rem;
+	border-radius: 2rem;
+	position: relative;
+	left: -1rem;
+	top: 0.4rem;
+}
+.outStockStyle {
+	@extend .inStockStyle;
+	color: $stock-red;
+	border: solid 1px rgba(201, 69, 21, 0.07);
+	background-color: rgba(201, 69, 21, 0.07);
+}

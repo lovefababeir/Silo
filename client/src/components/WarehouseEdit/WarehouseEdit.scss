@@ -1,0 +1,203 @@
+@import "../../styles/fonts";
+@import "../../styles/mixins";
+@import "../../styles/partials.scss";
+.edit {
+	min-width: 34.3rem;
+	min-height: 92.2rem;
+	//container of warehouse and contact section
+	&__inner {
+		@include tablet {
+			display: flex;
+		}
+	}
+	&__header {
+		display: flex;
+		align-items: baseline;
+		padding-top: 2rem;
+		padding-left: 7vw;
+		border-bottom: 1px solid $stock-silver;
+		@include tablet {
+			padding-left: 5vw;
+		}
+		@include desktop {
+			padding-left: 4vw;
+		}
+	}
+	&__heading {
+		display: inline-block;
+		width: 19rem;
+		height: 3.6rem;
+		left: 7.2rem;
+		font-size: 2.8rem;
+		line-height: 3.6rem;
+		margin-left: 1rem;
+		margin-bottom: 2.2rem;
+		font-weight: 600;
+		@include tablet {
+			font-size: 3.2rem;
+			line-height: 4rem;
+			width: 21.7rem;
+			height: 4rem;
+		}
+	}
+	&__subHeading {
+		font-size: 2rem;
+		line-height: 2.8rem;
+		width: 16.2rem;
+		height: 2.8rem;
+		margin: 1.6rem 0 2.3rem 0;
+		font-weight: 600;
+		@include tablet {
+			margin: 2.4rem 0 3.2rem 0;
+			font-size: 2.4rem;
+			line-height: 3.2rem;
+			width: 19.4rem;
+			height: 3.2rem;
+		}
+	}
+	//container of 2 buttons
+	&__btn {
+		padding-left: 5vw;
+		display: flex;
+		@include tablet {
+			justify-content: flex-end;
+			padding-left: 0;
+			padding-right: 6vw;
+		}
+		@include desktop {
+			padding-right: 5vw;
+		}
+	}
+	&__cancel {
+		font-size: 1.3rem;
+		line-height: 2rem;
+		align-self: center;
+		margin: 10px 0px;
+		display: flex;
+		flex-direction: row;
+		padding: 8px 51px;
+		width: 38vw;
+		height: 6vw;
+		background-color: $stock-white;
+		border: 1px solid $stock-silver;
+		box-sizing: border-box;
+		border-radius: 2rem;
+		justify-content: center;
+		align-items: center;
+		@include tablet {
+			width: 9vw;
+			height: 3vw;
+			padding: 8px 16px;
+		}
+		@include desktop {
+			font-size: 1.4rem;
+			line-height: 2.2rem;
+			width: 6vw;
+			height: 3vw;
+		}
+	}
+	&__save {
+		font-size: 1.3rem;
+		line-height: 2rem;
+		align-self: center;
+		margin: 10px 0px;
+		display: flex;
+		flex-direction: row;
+		padding: 8px 51px;
+		width: 38vw;
+		height: 6vw;
+		color: $stock-white;
+		background-color: $stock-indigo;
+		border: none;
+		box-sizing: border-box;
+		border-radius: 20px;
+		margin-left: 4vw;
+		justify-content: center;
+		align-items: center;
+		@include tablet {
+			width: 9vw;
+			height: 3vw;
+			padding: 8px 16px;
+		}
+		@include desktop {
+			font-size: 14px;
+			line-height: 22px;
+			width: 6vw;
+			height: 3vw;
+			margin-left: 1vw;
+		}
+	}
+}
+label {
+	display: block;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 20px;
+	margin-bottom: 0.4rem;
+	@include tablet {
+		font-size: 14px;
+		line-height: 22px;
+		margin-bottom: 12px;
+	}
+}
+textarea {
+	width: 79vw;
+	height: 10vw;
+	border: 1px solid $stock-silver;
+	box-sizing: border-box;
+	border-radius: 20px;
+	background-color: $stock-white;
+	padding: 0.8rem 0 0.8rem 1.6rem;
+	margin-bottom: 1.6rem;
+	@include tablet {
+		width: 37vw;
+		height: 5vw;
+	}
+	@include desktop {
+		width: 33vw;
+		height: 3vw;
+		margin-bottom: 2.4rem;
+	}
+}
+::placeholder {
+	font-size: 13px;
+	line-height: 20px;
+	color: $stock-black;
+}
+//container of warehouse inputs
+.warehouse {
+	padding-bottom: 0.8rem;
+	border-bottom: 1px solid $stock-silver;
+	padding-left: 5vw;
+	@include tablet {
+		// padding-left: 4vw;
+		padding: 0 4vw 0 4vw;
+		border-bottom: none;
+	}
+	@include desktop {
+		padding: 0 3vw 0 3vw;
+	}
+}
+//container of contact info section
+.contactW {
+	padding-left: 5vw;
+	@include tablet {
+		padding: 0 4vw 0 4vw;
+		border-left: 1px solid $stock-silver;
+	}
+	@include desktop {
+		padding: 0 3vw 0 3vw;
+	}
+	&__heading {
+		margin: 1.6rem 0 2.4rem 0;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 28px;
+		@include tablet {
+			margin: 2.4rem 0 3.2rem 0;
+			font-size: 24px;
+			line-height: 32px;
+			height: 32px;
+		}
+	}
+}
